@@ -28,12 +28,15 @@ function goPage(url) {
         var sticky = header_navbar.offsetTop;
 
         var logo = document.querySelector('.navbar-brand img')
+        var logoTitle = document.getElementById("logo-title-pxm")
         if (window.pageYOffset > sticky) {
           header_navbar.classList.add("sticky");
-          logo.src = 'assets/images/logo/logo.svg';
+          logoTitle.style.color = 'black';
+          logo.src = 'assets/images/VARIANTES/ICONO NEGRO.png';
         } else {
           header_navbar.classList.remove("sticky");
-          logo.src = 'assets/images/logo/white-logo.svg';
+          logoTitle.style.color = 'white';
+          logo.src = 'assets/images/VARIANTES/ICONO BLANCO.png';
         }
 
         // show or hide the back-top-top button
